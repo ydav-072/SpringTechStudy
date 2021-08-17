@@ -8,11 +8,19 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 <!--    configuration creating objects with id and full path to the class-->
-    <bean id = "myPet" class="com.springApp.studyProj.firstLesson.Cat">
-    </bean>
+<!--    <bean id = "myPet" class="com.springApp.studyProj.firstLesson.Cat">-->
+<!--    </bean>-->
 
 <!--   creating objects with id and full path to the class and configure ref on bean to the constructor = DI with constructor -->
-    <bean id = "myPerson" class="com.springApp.studyProj.firstLesson.Person">
-        <constructor-arg ref = "myPet"></constructor-arg>
+<!--    <bean id = "myPerson" class="com.springApp.studyProj.firstLesson.Person">-->
+<!--        <constructor-arg ref = "myPet"></constructor-arg>-->
+<!--    </bean>-->
+
+    <bean id = "myPet" class="com.springApp.studyProj.firstLesson.DIWithSetter.Cat">
     </bean>
+<!--       creating objects with id and full path to the class and configure ref on bean to the setter = DI with setter -->
+    <bean id = "myPerson" class="com.springApp.studyProj.firstLesson.DIWithSetter.Person">
+        <property name="pet" ref="myPet"/>
+    </bean>
+
 </beans>
