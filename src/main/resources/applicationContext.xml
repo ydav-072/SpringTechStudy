@@ -10,4 +10,9 @@
 <!--    configuration creating objects with id and full path to the class-->
     <bean id = "myPet" class="com.springApp.studyProj.firstLesson.Cat">
     </bean>
+
+<!--   creating objects with id and full path to the class and configure ref on bean to the constructor = DI with constructor -->
+    <bean id = "myPerson" class="com.springApp.studyProj.firstLesson.Person">
+        <constructor-arg ref = "myPet"></constructor-arg>
+    </bean>
 </beans>
