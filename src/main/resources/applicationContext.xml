@@ -7,5 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-
+<!--    c onfiguration creating objects with id and full path to the class-->
+    <bean id = "myPet" class="com.springApp.studyProj.firstLesson.Cat">
+    </bean>
 </beans>
