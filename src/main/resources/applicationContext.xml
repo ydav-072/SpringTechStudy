@@ -7,6 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+<!--    properties file with value of field-->
+    <context:property-placeholder location="classpath:myApp.properties"/>
+
 <!--    configuration creating objects with id and full path to the class-->
 <!--    <bean id = "myPet" class="com.springApp.studyProj.firstLesson.Cat">-->
 <!--    </bean>-->
@@ -16,11 +19,23 @@
 <!--        <constructor-arg ref = "myPet"></constructor-arg>-->
 <!--    </bean>-->
 
-    <bean id = "myPet" class="com.springApp.studyProj.firstLesson.DIWithSetter.Cat">
-    </bean>
+<!--    <bean id = "myPet" class="com.springApp.studyProj.firstLesson.DIWithSetter.Cat">-->
+<!--    </bean>-->
 <!--       creating objects with id and full path to the class and configure ref on bean to the setter = DI with setter -->
-    <bean id = "myPerson" class="com.springApp.studyProj.firstLesson.DIWithSetter.Person">
+<!--    <bean id = "myPerson" class="com.springApp.studyProj.firstLesson.DIWithSetter.Person">-->
+<!--        <property name="pet" ref="myPet"/>-->
+<!--    </bean>-->
+
+    <bean id = "myPet" class="com.springApp.studyProj.firstLesson.DIOtherValue.Cat">
+    </bean>
+    <!--       creating objects with id and full path to the class and configure ref on bean to the setter = DI with setter -->
+    <bean id = "myPerson" class="com.springApp.studyProj.firstLesson.DIOtherValue.Person">
         <property name="pet" ref="myPet"/>
+<!--        injection value hardcore-->
+<!--        <property name="surName" value="Levitsky"/>-->
+<!--        <property name="age" value="30"/>-->
+        <property name="age" value="${person.age}"/>
+        <property name="surName" value="${person.surname}"/>
     </bean>
 
 </beans>
