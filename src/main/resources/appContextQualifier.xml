@@ -7,6 +7,6 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.springApp.studyProj.AnnotationConfigure.ValueAnnotation"/>
-    <context:property-placeholder location="classpath:myApp.properties"></context:property-placeholder>
+    <context:component-scan base-package="com.springApp.studyProj.AnnotationConfigure.ScopeAnnotation"/>
+<!--    <context:property-placeholder location="classpath:myApp.properties"></context:property-placeholder>-->
 </beans>
