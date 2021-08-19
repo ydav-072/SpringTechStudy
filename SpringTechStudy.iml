@@ -21,6 +21,9 @@
         <fileset id="fileset5" name="AppContextAnnotSetter" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/appContextAnnotSetter.xml</file>
         </fileset>
+        <fileset id="fileset6" name="AppContextQualifier" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/appContextQualifier.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
