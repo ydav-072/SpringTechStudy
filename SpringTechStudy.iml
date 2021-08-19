@@ -18,6 +18,9 @@
         <fileset id="fileset2" name="AppContextAnnotation" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/appContextAnnotation.xml</file>
         </fileset>
+        <fileset id="fileset5" name="AppContextAnnotSetter" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/appContextAnnotSetter.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
