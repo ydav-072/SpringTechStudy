@@ -6,8 +6,17 @@
         <fileset id="fileset" name="ApplicationContext" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
         </fileset>
+        <fileset id="fileset3" name="ApplicationContext3" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/applicationContext3.xml</file>
+        </fileset>
+        <fileset id="fileset4" name="AppContext" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/appContext.xml</file>
+        </fileset>
         <fileset id="fileset2" name="ApplicationContextBeanScope" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/applicationContextBeanScope.xml</file>
+        </fileset>
+        <fileset id="fileset2" name="AppContextAnnotation" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/appContextAnnotation.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -25,5 +34,11 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Spring-5.2.3.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.9" level="project" />
   </component>
 </module>
