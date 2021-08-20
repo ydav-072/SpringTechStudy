@@ -1,10 +1,7 @@
-package com.springApp.studyProj.AOP.afterThrowing.aspects;
+package com.springApp.studyProj.AOP.afterThrowingandAfter.aspects;
 
-import com.springApp.studyProj.AOP.afterThrowing.Student;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.AfterThrowing;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
+import com.springApp.studyProj.AOP.afterThrowingandAfter.Student;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -41,5 +38,10 @@ public class UniversityLogginAspect {
         //we can't processing exception
         System.out.println("afterThrowingGetStudentsLogginAdvice: Logging Exception in getStudentList: " + exception);
 
+    }
+
+    @After("execution(* getStudentList())")
+    public void afterGetStudentsLogginAdvice(){
+        System.out.println("afterGetStudentsLogginAdvice: Logging normally or exception finish method getStudentList");
     }
 }

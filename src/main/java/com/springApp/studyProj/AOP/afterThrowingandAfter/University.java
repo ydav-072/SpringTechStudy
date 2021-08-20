@@ -1,4 +1,4 @@
-package com.springApp.studyProj.AOP.afterThrowing;
+package com.springApp.studyProj.AOP.afterThrowingandAfter;
 
 import org.springframework.stereotype.Component;
 
