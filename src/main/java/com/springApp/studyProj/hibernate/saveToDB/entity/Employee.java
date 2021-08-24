@@ -1,4 +1,4 @@
-package com.springApp.studyProj.hibernate.entity;
+package com.springApp.studyProj.hibernate.saveToDB.entity;
 
 import javax.persistence.*;
 
