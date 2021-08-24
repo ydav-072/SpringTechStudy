@@ -1,15 +1,19 @@
 package com.springApp.studyProj.hibernate.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "employee")
+@Table(name = "employees")
 public class Employee {
 
     @Id
+    // @GeneratedValue - describes strategy of generation value for column with Primary Key
+    // GenerationType.IDENTITY - автоматическое увеличение столбца по правилам, описанным в БД
+    // GenerationType.SEQUENCE - полагается на работу Sequence, созданного в БД(подходит для БД oracle)
+    // GenerationType.Table -
+    // GenerationType.AUTO - дефолтный тип, выбор стратегии будет зависеть от типа базы, с которой мы работаем
+
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
